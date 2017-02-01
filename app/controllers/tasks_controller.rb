@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  def index 
+  def index
     render json: Task.order(:id)
   end
 
@@ -13,7 +13,6 @@ class TasksController < ApplicationController
     task = Task.create(task_params)
     render json: task
   end
-
 
   private
 
